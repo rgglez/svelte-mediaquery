@@ -10,13 +10,13 @@ Conditionally rendering code fragments based on screen resolution, using [media 
 
 ## Usage
 
-### Svelte < 5
+### Svelte 3
 
 ```javascript
 import { MediaQuery } from '$lib/components/MediaQuery.svelte';
 ```
 
-```svelte
+```javascript
 <MediaQuery query="(min-width: 1200px)" let:matches>
     {#if matches}
     ...
@@ -24,17 +24,22 @@ import { MediaQuery } from '$lib/components/MediaQuery.svelte';
 </MediaQuery>
 ```
 
-### Svelte 5
+### Svelte 5 with runes
 
 ```javascript
 import { useMediaQuery } from '$lib/helpers/mediaQuery.js';
 
-const isBigScreen = useMediaQuery('(min-width: 1200px)');
+const isWide = useMediaQuery('(width > 992px)');
+const prefersDark = useMediaQuery('(prefers-color-scheme: dark)');
 ```
 
-```svelte
-{#if isBigScreen}
-...
+```javascript
+{#if $isWide}
+	<p>Wide screen</p>
+{/if}
+
+{#if $prefersDark}
+	<p>Dark mode user</p>
 {/if}
 ```
 
