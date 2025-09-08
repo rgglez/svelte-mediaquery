@@ -5,6 +5,8 @@
 ![GitHub issues](https://img.shields.io/github/issues/rgglez/svelte-mediaquery) 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/rgglez/svelte-mediaquery)
 ![MadeWithSvelte](https://madewithsvelte.com/storage/repo-shields/2274-shield.svg)
+![GitHub stars](https://img.shields.io/github/stars/rgglez/svelte-mediaquery?style=social)
+![GitHub forks](https://img.shields.io/github/forks/rgglez/svelte-mediaquery?style=social)
 
 Conditionally rendering code fragments based on screen resolution, using [media query](https://developer.mozilla.org/es/docs/Web/CSS/CSS_media_queries/Using_media_queries).
 
